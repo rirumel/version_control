@@ -15,6 +15,8 @@ def load_json():
 
 response = load_json()
 
+# print(response) --- I just wanted to see if my inputs are stored in the response json
+
 def write_json(data,filename = '../response.json'):
     with open(filename,'w') as file:
         json.dump(data,file,indent=0)
